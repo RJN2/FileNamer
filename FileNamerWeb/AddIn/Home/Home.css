@@ -1,2 +1,36 @@
 ﻿/* Page-specific styling */
 
+/* Current content */
+#current-doc-properties {
+    text-align:left;
+    font-size:13px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.current-info-section-line {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.current-info-section-label {
+    padding: 5px 10px;
+    display: inline-block;
+    background-color: whitesmoke;
+    width: 20%;
+}
+
+/* form */
+form {
+    display:block;
+}
+
+.form-input {
+    width:100%;
+    padding:5px;
+}
+
+#name-previewer {
+    width:100%
+}
