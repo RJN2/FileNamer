@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="content-header">
+        <div class="padding">
+            <h1>Rosh</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+
+            <!-- docProp viewer -->
+            <div id="current-doc-properties">
+                <div class="current-info-section-line">
+                    <span class="current-info-section-label">Filename</span>
+                    <span class="current-info-section-result" id="current-filename" data-current-filename>New document</span>
+                </div>
+                <div class="current-info-section-line">
+                    <span class="current-info-section-label">Version</span>
+                    <span class="current-info-section-result" id="current-version" data-current-version>1</span>
+                </div>
+                <div class="current-info-section-line">
+                    <span class="current-info-section-label">Draft</span>
+                    <span class="current-info-section-result" id="current-draft" data-current-draft>1</span>
+                </div>
+                <div class="current-info-section-line">
+                    <span class="current-info-section-label">Level</span>
+                    <span class="current-info-section-result" id="current-level" data-current-level>Public</span>
+                </div>
+
+            </div>
+
+            <!-- Form -->
+            <form id="naming-form">
+                <div class="form-section">
+                    <input id="fileNameInput" placeholder="Filename" class="form-input" />
+                </div>
+                <div class="form-section form-section-x2">
+                    <input id="versionInput" placeholder="Version" class="form-input" data-cmNode="version" />
+                </div>
+                <div class="form-section">
+                    <input id="draftInput" placeholder="Draft" class="form-input" data-cmNode="draft" />
+                </div>
+                <div class="form-section">
+                    <select id="levelInput" class="form-input" data-cmNode="level">
+                        <option value="Public">Public</option>
+                        <option value="Internal Use Only">Internal Use Only</option>
+                        <option value="Confidential">Confidential</option>
+                        <option value="Strictly Confidential">Strictly Confidential</option>
+                    </select>
+                </div>
+
+                <!-- namePreviewer -->
+                <div id="name-previewer">
+                    <span id="name-previewer-text">Name Previewer</span>
+                </div>
+
+                <input type="button" value="Save" id="saveForm" />
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
