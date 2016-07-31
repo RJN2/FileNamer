@@ -30,4 +30,6 @@ var app = (function () {
     };
 
     return app;
+
+    //notification
 })();
